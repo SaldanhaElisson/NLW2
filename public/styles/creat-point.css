@@ -1,0 +1,195 @@
+#page-creat-point {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+#page-creat-point header {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-creat-point header a {
+    color: var(--title-color);
+
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+}
+
+#page-creat-point header a span{
+    margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+}
+
+form{
+    
+    background-color: white;
+
+    /* alinhamento ( pelo lado de fora da caixa*/
+    margin: 80px auto ; 
+    padding: 64px; /* preenchimento */
+
+    border-radius: 8px;
+
+    max-width: 730px ;
+
+    
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+
+    border:0;
+
+}
+
+form legend {
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+form legend span{
+    font-size: 14px;
+    color: var(--title-color);
+}
+form .field{
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    outline: none; /*  A linha preta das bordas da caixa do input, qundo clickada não aparecem, mais*/  
+
+    border-radius: 8px;
+}
+
+form select{
+    -webkit-appearance: none ;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* esses comandos vai tirar a característica do select */ 
+
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+} 
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color:  var(--primary-color);
+    border-radius: 8px;
+
+    color: white;
+    font-size: 16px;
+    font-weight:  bolder;
+
+    border: 0ch;
+
+    margin-top: 24px;
+
+    transition: background-color 400ms ;
+
+}
+
+form button:hover{
+
+    background-color: #2fb86e;
+}
+
+.items-grid { 
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 16px
+    /* displa: grid; serve para fazer coluna assim como o display flex, mas nesse caso eu digo quantas colunas eu quero fazer 1fr é uma forma fracionária para dizer quantas colunas eu quero no gap ele dá margin sem utilizar margin */
+}
+
+
+.items-grid li{
+    background-color: #f0f0f5;
+    list-style: none ;
+
+    border: 2ox solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+
+    padding: 32px 24px 16px; /* medidas da caixa dentro da caixa*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.items-grid li span {
+
+    margin-top: 12px;
+    
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    
+    text-align: center;
+
+    color: var(--title-color);
+}
+
+.items-grid li.selected{ 
+    background: #e1faec;
+    border: 2px solid #34cb79;
+
+}
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+
+    /*  só vai selecionar o li não a imagem e nem o texto pois ainda continuara tendo o curso point no li*/
+}

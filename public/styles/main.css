@@ -1,0 +1,44 @@
+:root{
+   --title-color: #322153;/*  váriavel para css, colocar antes do html, quando eu mudar a propriedade desse váriavel todas as variáveis usadas vão mudar também */
+   --primary-color: #34cb79; 
+
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+/* BOX MODEL
+
+Modelo de caixa
+Toda caixa tem
+largura, espaçamento, altura, preenchimento, bordas, cor, fundo, maneira que é vista, posicionamento, alinhamentos
+*/
+
+h1, h2, h3, h4, h5, h6 {
+
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+body {
+
+        background-color: #f0f0f5;
+        -webkit-font-smothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+body p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

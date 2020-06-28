@@ -1,0 +1,63 @@
+@media (max-width: 900px) {
+    
+    /* quando a tela for de  0 a 900 px ele vai fzr o que o comando está dizendo abaixo */
+    
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+
+    }
+
+    #page-search-results main .cards{
+        grid-template-columns: 1fr;
+    }
+    #page-search-results main .cards img{
+        height: 250px;
+    }
+    
+    #page-creat-point .field-group{
+        flex-direction: column;
+    } 
+
+    #page-creat-point .field-group .field + .fiel{
+        margin-left: 0;
+    }
+    #page-creat-point .items-grid { 
+        display: grid ;
+        grid-template-columns: 1fr 1fr ;
+    
+        gap: 10px
+        } 
+}
+@media (min-width: 1700px){
+    #page-home {
+        background-position-x: 40vw ;
+    }
+
+   
+}
+@media (max-height: 760px){
+    #page-home {
+        background-position-y: 200px ;
+    }
+   
+}
+@media (max-width: 2400px) {
+    #modal .header {
+        width: 420px;
+    }
+}
